@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Music Website</title>
+</head>
+<body>
+    <header>
+       <div class="menu_side">
+        <h1> Playlist </h1><br>
+        <div class="playlist">
+            <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> My library</h4>
+            <h4><span></span><i class="bi bi-music-note-beamed"></i> Recently played</h4>
+            <h4><span></span><i class="bi bi-music-note-beamed"></i> Recommended</h4>
+        </div>  
+        <div class="menu_song">
+            <li class="song item">
+                <span> 01</span>
+            <img src="images/1.jpg" alt="">
+            <h5>Visiri <br>
+            <div class="subtitle"> Sid sriram</div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+            </li>
+            <li class="song item">
+                <span> 02</span>
+            <img src="images/2.jpg" alt="">
+            <h5>Aval<br>
+            <div class="subtitle"> Pradeep kumar</div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="2"></i>
+            </li>
+            <li class="song item">
+                <span> 03</span>
+            <img src="images/3.jpg" alt="">
+            <h5>Nenjukkul peithidum<br>
+            <div class="subtitle"> Harris jayaraj</div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="3"></i>
+            </li>
+            <li class="song item">
+                <span> 04</span>
+            <img src="images/4.jpg" alt="">
+            <h5>Mental manadhil<br>
+            <div class="subtitle"> A.R.Rahman</div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="4"></i>
+            </li>
+            <li class="song item">
+                <span> 05</span>
+            <img src="images/5.jpg" alt="">
+            <h5>Oru maalai<br>
+            <div class="subtitle"> Karthik</div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="5"></i>
+            </li>
+            <li class="song item">
+                <span> 06</span>
+            <img src="images/6.jpg" alt="">
+            <h5>Kangal edho<br>
+            <div class="subtitle"> Pradeep kumar</div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="6"></i>
+            </li>
+            <li class="song item">
+                <span> 07</span>
+            <img src="images/7.jpg" alt="">
+            <h5>Hayyoda<br>
+            <div class="subtitle"> Anirudh ravichander</div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="7"></i>
+            </li>
+            <li class="song item">
+                <span> 08</span>
+            <img src="images/8.jpg" alt="">
+            <h5>Nee kavithaigala<br>
+            <div class="subtitle"> Pradeep kumar</div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="8"></i>
+            </li>
+            <li class="song item">
+                <span> 09</span>
+            <img src="images/9.jpg" alt="">
+            <h5>Kadhal yennulle<br>
+            <div class="subtitle"> Ranjith govind</div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="9"></i>
+            </li>
+            <li class="song item">
+                <span> 10</span>
+            <img src="images/10.jpg" alt="">
+            <h5>Azhagiye<br>
+            <div class="subtitle">A.R.Rahman </div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="10"></i>
+            </li>
+            <li class="song item">
+                <span> 11</span>
+            <img src="images/11.jpg" alt="">
+            <h5>Kangal irandal<br>
+            <div class="subtitle"> James vasanthan</div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="11"></i>
+            </li>
+            <li class="song item">
+                <span> 12</span>
+            <img src="images/12.jpg" alt="">
+            <h5>Kannaana kanne<br>
+            <div class="subtitle"> Sean roldan</div>
+        
+            </h5>
+            <i class="bi playlistplay bi-play-circle-fill" id="12"></i>
+            </li>
+        </div>
+       </div>   
+       <div class="song_side"></div>
+
+       <div class="master_play">
+        <div class="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+        </div>
+        <img src="images/13.jpg" alt="" id="poster_master_play">
+        <h5 id="title">
+        Naa ready thaan
+        <div class="subtitle">Anirudh ravichander</div>
+    
+    </h5>
+
+    <div class="icons">
+        <i class="bi shuffle bi-music-note-beamed">next</i>
+        <i class="bi bi-skip-start-fill"></i>
+        <i class="bi bi-play-fill"></i>
+        <i class="bi bi-skip-end-fill"></i>
+        <i class="bi bi-cloud-arrow-down-fill" id="download_music"></i>
+    </div>
+    <span id="currentStart">0.00</span>
+    <div class="bar">
+        <input type="range" id="seek" min="0" max="100">
+        <div class="bar2" id="bar2"></div>
+        <div class="dot"></div>
+    </div>
+    <span id="currentEnd">0.30</span>
+    <div class="vol">
+        <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+        <input type="range" min="0" max="100" id="vol"> 
+        <div class="vol_bar"></div>
+        <div class="dot" id="vol_dot"></div>
+
+
+
+    </div>
+       </div>
+       
+    
+       
+       </header>
+    </header>
+    <script src="app.js"></script>
+    
+</body>
+</html>
